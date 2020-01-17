@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css" >
+</head>
+
+<body>
+    <div class = "container">
+    <div class="header">
+        <h1>Profile Management Page</h1>
+    </div>
+
+    <div class = "topnav">
+            <a href="#home">Home</a>
+            <a class="active" href="#profile">Profile</a>
+            <a href="#fuelquoteinformation">Fuel Quote Information</a>
+            <a href="#logout">Log Out</a>
+    </div>
+
+    <div class="userform">
+        <div class = "header2">
+                <h2>User Profile</h2>
+        </div>
+        
+        <form align="center">
+            <label for="fname">First Name</label>
+            <input type="text" name="firtname" value="John" contenteditable="true">
+            <br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" name="lastname" value="Snow" contenteditable="true">
+            <br>
+
+            <label for="address">Address</label>
+            <input type="text" name="address" value="8917 S Gessner Dr" contenteditable="true">
+            <br>
+
+            <label for="city">City</label>
+            <input type="text" name="city" value="Houston" contenteditable="true">
+            <br>
+
+            <label for="state">State</label>
+            <input type="text" name="state" value="Texas" contenteditable="true">
+            <br>
+
+            <label for="zipcode">Zip Code</label>
+            <input type="text" name="zipcode" value="77074" contenteditable="true">
+            <br>
+
+            <input type = "button" name="submit" value ="Submit">
+            <input type = "button" name="reset" value ="Reset">
+        </form>
+    </div>
+    
+
+    <div class = "bottom">
+        <footer>Software Design</footer>
+    </div>
+</div>
+
+</body>
+
+</html>

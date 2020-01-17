@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+			<title>[Insert Company Name]-Home Page</title>
+</head>
+			 <body>
+			 <h1 id="top" align="center">[Insert Company Name]</h1>
+			 						 <p>We are here for you!</p>
+<!-- learned clickable tags from 
+https://www.w3schools.com/howto/howto_js_tabs.asp-->
+					<!-- The Links to the Tabs -->
+				<div id="Login/signup" class="tab" >
+						 <button class="tablinks" onclick="openTab(event, 'Login')">Login</button>
+						 <button class="tablinks" onclick="openTab(event, 'SignUp')">Sign Up</button>
+				</div>
+				<style type="text/css">
+<!-- 
+For Button
+-->
+	 						 .tab{
+							 			overflow: hidden;
+										border: 0px solid #ccc;
+										background-color: #f1f1f1;
+										}
+							.tab button{
+									 				background-color: inherit;
+													float: right;
+													border: groove;
+													outline: none;
+													cursor: pointer;
+													padding: 14px 16px;
+													transition: 0.3s;
+												}
+							.tab button:hover{
+									 background-color: #ddd;
+									 							}
+							.tab button.active{
+									 backgroung-color: #ccc;
+									 }
+							.tabcontent{
+													display: none;
+													padding: 6px 12px;
+													border: 1px solid #ccc;
+													border-top: none;
+													animation: fadeEffect 1s;
+													}
+							 @keyframes fadeEffect{
+							 						from {opacity: 0;}
+													to {opacity: 1;}
+													}
+							 
+	 	 		</style>
+				<!-- Tab Content -->
+				<div id="Login" class="tabcontent">
+						 <!-- Begin Text Fields -->
+				</div>
+				
+				<div id="SignUp" class="tabcontent">
+						 <!--  -->
+				</div>	 
+					<!---				 <h2><a href="SignUp.htm"> Login</a></h2>
+			 									<h3>About This Site</h3>
+									 					 <p>This site is designed to help your company
+														  estimate your prices.
+					-->						
+					
+					<script type="text/javascript">
+function openTab(evt, action){
+				 var i, tabcontent, tablinks;
+				 tabcontent=document.getElementsByClassName('tabcontent');
+				 for(i=0; i < tabcontent.length; i++){
+				 					tabcontent[i].style.display = "none";
+				 					}
+									
+				tablinks = document.getElementsByClassName('tablinks');
+				for(i=0; i < tablinks.length; i++){
+				 				 tablinks[i].className = tablinks[i].className.replace("active", "");
+				 				 }
+				 
+				 document.getElementsById(action).style.display = "blocks";
+				 evt.currentTarget.clssName += "active";
+				 }
+					</script>
+			 </body>
+</html>
+
+				 

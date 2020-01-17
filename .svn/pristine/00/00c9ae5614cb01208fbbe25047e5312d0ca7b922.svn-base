@@ -1,0 +1,97 @@
+
+body {
+  font-family: Tahoma,Helvetica,sans-serif;
+    background-color:#F4F4F4;
+    margin:0;
+}
+
+.container{
+    margin: auto;
+}
+
+.headercontainer{
+  margin:auto;
+  overflow: hidden;
+  text-align: center;
+  background-color:#ad181f;
+}
+
+.header{
+    width:80%;
+    margin:auto;
+    color:white;
+    font-size: 18px;
+    text-align: left;
+}
+
+.bottom{
+    background-color:#ad181f;
+    padding: 10px;
+    color:wheat;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    font-size: 18px;
+}
+
+.navdiv{
+  width:80%;
+  margin:auto;
+}
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing:border-box;
+  }
+
+  input[type=text]:focus {
+    background-color: lightskyblue;
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #ad181f;
+    border: none;
+    color: wheat;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.header2{
+    text-align: center;
+}
+
+.userform{
+  width:40%;
+  margin:auto;
+}
+.mainfooter{
+  background-color: #ad181f;
+  color: white;
+  text-align: center;
+  padding:30px;
+  position:fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+}

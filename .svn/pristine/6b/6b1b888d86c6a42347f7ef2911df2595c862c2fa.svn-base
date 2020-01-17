@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+    <title>[Insert Company Name]-Home Page</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Tahoma,Helvetica,sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.6em;
+            margin: 0;
+        }
+        header {
+            background-color: #AD181F;
+        }
+        header h1{
+            color:white;
+        }
+        h1 {
+            color: #AD181F;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        p {
+            color: red;
+        }
+        label {
+            color: red;
+        }
+        <!-- For Buttons -->
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+            width: 80%;
+            margin: auto;
+        }
+
+        .tab button {
+            background-color: red;
+            float: right;
+            border: groove;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+        }
+
+            .tab button:hover {
+                background-color: #ddd;
+            }
+
+            .tab button.active {
+                background-color: #ccc;
+            }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+            animation: fadeEffect 1s;
+        }
+
+        @keyframes fadeEffect {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+        }
+
+        .navbar ul {
+            padding: 0;
+            list-style: none;
+         }
+        .navbar li {
+            display: inline;
+        }
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                font-size: 18px;
+                padding-right: 15px;
+            }   
+    </style>
+        
+</head>
+<body>
+    <header id="mainHeader">
+        <div class="container">
+            <h1>Log In/Sign Up</h1>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Fuel Quote Information</a></li>
+                <li><a href="#">Log Out</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <h1 id="top" align="center">[Insert Company Name]</h1>
+    <p>We are here for you!</p>
+    <!-- learned clickable tags from
+        https://www.w3schools.com/howto/howto_js_tabs.asp -->
+    <!-- The Links to the Tabs -->
+    <div id="Login/signup" class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Login')">Login</button>
+        <button class="tablinks" onclick="openTab(event, 'SignUp')">Sign Up</button>
+    </div>
+
+
+    <!-- Tab Content -->
+    <div id="Login" class="tabcontent">
+        <!-- Begin Text Fields -->
+        <label for="Email"><b>Email</b></label>
+        <input type="text" name="Email" placeholder="Enter Email" contenteditable="true" required>
+        <br>
+
+        <label for="Password"><b>Password</b></label>
+        <input type="password" name="Password" placeholder="Enter Password" contenteditable="true" required>
+        <br>
+
+        <button type="submit">Login</button>
+    </div>
+
+    <div id="SignUp" class="tabcontent">
+        <!--  -->
+        <label for="Email"><b>Email</b></label>
+        <input type="text" name="Email" placeholder="Enter Email" contenteditable="true" required>
+        <br>
+
+        <!-- Company Name-->
+        <label for="companyName"><b>Your Company's Name</b></label>
+        <input type="text" name="company" placeholder="Enter your Company's Name" contenteditable="true" required>
+        <br>
+
+        <label for="Password"><b>Password</b></label>
+        <input type="password" name="Password" placeholder="Enter Password" contenteditable="true" required>
+        <br>
+
+        <label for="Password"><b>Confirm Password</b></label>
+        <input type="password" name="ConfirmPassword" placeholder="Enter Password Again" contenteditable="true" required>
+        <br>
+
+        <button type="submit">Sign Up</button>
+    </div>
+
+
+    <script>
+        function openTab(evt, action) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            document.getElementById(action).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+    </script>
+</body>
+</html>
+
+				 

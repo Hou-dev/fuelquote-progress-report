@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: black;}
+h1   {color: red;}
+p    {color: red;}
+br   {color:red}
+</style>
+</head>
+<body>
+
+    <center> 
+<button class="Click" onclick="openPage('Login')">Login</button>
+<button class="Click" onclick="openPage('Profile')">Profile</button>
+<button class="Click" onclick="openPage('Fule Quote')">Fuel Quote</button>
+<button class="Click" onclick="openPage('Fuel History')">Fuel History</button>
+</center>
+
+<h1 style="text-align:center"><span style="text-decoration: underline">Profile Management Page</span></h1>
+<form action="", style="text-align:center">
+    <p>First name:<br>
+    <input type = "text" name="firtname" value = "John" contenteditable="true"></p>
+    <p>Last name:<br>
+    <input type = "text" name="lastname" value = "Snow" contenteditable="true"></p>
+    <p>Address:<br>
+    <input type = "text" name="address" value = "8917 S Gessner Dr" contenteditable="true"></p>
+    <p>City:<br>
+    <input type = "text" name="city" value = "Houston" contenteditable="true"></p>
+    <p>State:<br>
+    <input type = "text" name="state" value = "Texas" contenteditable="true">
+    </p>
+    <p>Zipcode:<br>
+    <input type = "text" name="zipcode" value = "77074" contenteditable="true">
+    <br>
+    <br>
+    <input type = "submit" value = "Submit">
+    <input type = "reset">
+    </p>
+</form>
+
+
+</body>
+</html>
